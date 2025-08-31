@@ -35,6 +35,12 @@ spec:
                 configMapKeyRef:
                   key: database_url
                   name: mongodb-configmap
+            - name: ME_CONFIG_BASICAUTH_USERNAME
+              value: "admin"
+            - name: ME_CONFIG_BASICAUTH_PASSWORD
+              value: "pass"
+            - name: ME_CONFIG_MONGODB_PORT
+              value: "27017"
 ---
 apiVersion: v1
 kind: Service
